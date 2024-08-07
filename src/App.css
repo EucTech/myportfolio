@@ -1,0 +1,10 @@
+html, body{
+    /* overflow-x: hidden; */
+}
+
+@media screen and (max-width:767px) {
+    .menu{
+        background-color: #282C33;
+        height: 100vh;
+    }
+}
