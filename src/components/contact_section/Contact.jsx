@@ -36,7 +36,7 @@ const Contact = () => {
                 <div className="flex gap-1 items-center mb-3">
                   <i className="ri-whatsapp-line text-[#ABB2BF] text-3xl ml-1 pb-0 mb-0"></i>
                   {/* <img src={require("./imgs/whatsapp (1).png")} alt="" className="w-[4%] mx-1" style={{ filter: "invert(100%)", color:"#ABB2BF" }}/> */}
-                  <span className="text-[#ABB2BF]">+2348141870370</span>
+                  <span className="text-[#ABB2BF]">+250795418393</span>
                 </div>
                 <div className="flex gap-1 items-center">
                   <img src={require("./imgs/Email.png")} alt="" />
