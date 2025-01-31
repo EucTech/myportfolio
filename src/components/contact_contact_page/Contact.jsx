@@ -8,14 +8,14 @@ const Contact = () => {
                 <span className=' text-[#C778DD]'>/</span>
                 contacts</div>
             {/* h2 title */}
-            <div className=" text-white mt-[14px] mb-[46px]">Who am i?</div>
+            <div className=" text-white mt-[14px] mb-[46px]">Who am I?</div>
             {/* flex main */}
             <div className="flex justify-between flex-wrap gap-10">
                 {/* left side */}
                 <div className="  md:w-3/5 w-full">
                     {/* some text */}
                     <div className=" text-[#ABB2BF] font-medium">
-                        I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me
+                        I’m interested in freelance, full-time and part-time opportunities. However, if you have other request or question, don’t hesitate to contact me
                     </div>
                 </div>
                 {/* right side */}
@@ -24,7 +24,7 @@ const Contact = () => {
                     {/* 1 */}
                     <div className=" p-4 border border-[#ABB2BF]">
                         <h2 className=' text-white font-medium pb-2'>Call Number</h2>
-                        <span className='text-[#ABB2BF]'>+2348141870370</span>
+                        <span className='text-[#ABB2BF]'>+250795418393</span>
                     </div>
                     {/* 2 */}
                     <div className=" p-4 border border-[#ABB2BF]">
