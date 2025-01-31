@@ -17,10 +17,10 @@ const AboutSec = () => {
             </div>
             {/* disc */}
             <p className="text-[#ABB2BF] ">
-              Hello, i’m Uche!
+              Hello, I’m Uche!
               <br />
               <br />
-              I’m a self-taught front-end developer from Nigeria. I specialize
+              I’m a self-taught front-end developer Based in Rwanda. I specialize
               in building responsive websites from the ground up and
               transforming them into modern, user-friendly web experiences.
               <br />
