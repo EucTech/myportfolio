@@ -2,7 +2,7 @@ const Skills = () => {
   const skills = [
     {
       title: "Languages",
-      languages: ["HTML", "CSS", "JavaScript", "Python", "Php",],
+      languages: ["HTML", "CSS", "JavaScript", "TypeScript", "Python",],
     },
     { title: "Databases", languages: ["My-SQL", "Mongo Db"] },
     {
