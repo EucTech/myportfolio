@@ -23,7 +23,7 @@ const Footer = () => {
             </div>
             {/* disc */}
             <div className="text-[#ffffff]">
-              <p>Web Developer based in Nigeria</p>
+              <p>Web Developer based in Rwanda</p>
             </div>
           </div>
           {/* right */}
@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
         {/* bottom */}
         <div className="text-center text-[#ABB2BF] pb-8 mt-12">
-          &copy; Copyright {new Date().getFullYear()}. Made by Frank
+          &copy; Copyright {new Date().getFullYear()}. Made by EucTech
         </div>
       </div>
     </>
