@@ -11,7 +11,7 @@ const About = () => {
             about-me
           </div>
           <div className=" text-white text-base font-normal mt-[14px]">
-            Who am i?
+            Who am I?
           </div>
         </div>
       </div>
@@ -20,10 +20,10 @@ const About = () => {
         <div className="md:w-[48%] w-full">
           {/* disc */}
           <p className="text-[#ABB2BF] ">
-            Hello, i’m Uchechukwu!
+            Hello, I’m Uchechukwu!
             <br />
             <br />
-            I’m a self-taught front-end developer from Anambra State, Nigeria. I
+            I’m a front-end developer based in Rwanda. I
             specialize in building responsive websites from the ground up and
             transforming them into modern, user-friendly web experiences.
             <br />
