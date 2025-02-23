@@ -18,20 +18,6 @@ const Projects = () => {
       disc: "A company landing page buying of food stuffs",
       link: "https://bazaar-red.vercel.app/"
     },
-    {
-      img: shan,
-      langs: ["HTML", "CSS", "AJAX", "Django", "Python"],
-      title: "Shan Feng Tire Company",
-      disc: "A full stack web site for a tire company that repaires and sells tires",
-      link: "https://www.shanfengcoltd.com/"
-    },
-    {
-      img: creator,
-      langs: ["jsx", "css", "javascript", "react", "tailwind css", "node js"],
-      title: "Withaudacious",
-      disc: "A website for content creators community",
-      link: "https://withaudacious.vercel.app/"
-    },
 
     {
       img: aq,
