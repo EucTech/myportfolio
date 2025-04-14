@@ -1,40 +1,40 @@
 import React from 'react'
 // imgs
 import Project_card from '../project_card/Project_card';
-import shan from "../projects_section/imgs/shan.png";
+import quickrent from "../projects_section/imgs/quickrent.png";
 import bazzar from "../projects_section/imgs/bazzar.png";
-import creator from "../projects_section/imgs/creator.png";
+import rumohq from "../projects_section/imgs/rumohq.png";
 import aq from "../projects_section/imgs/aq.png";
 import idea from "../projects_section/imgs/idea.png";
 
 const Complete_apps = () => {
     const projects = [
         {
-          img: shan,
-          langs: ["HTML", "CSS", "AJAX", "Django", "Python"],
-          title: "Shan Feng Tire Company",
-          disc: "A full stack web site for a tire company that repaires and sells tires",
-          link: "https://www.shanfengcoltd.com/"
-        },
+            img: quickrent,
+            langs: ["Next.js", "Tailwind css", "Node.js", "Express"],
+            title: "Quick Rent",
+            disc: "Designed and developed a web application for rentinf and selling of properties.",
+            link: "https://quickrent-rho.vercel.app/"
+          },
         {
           img: bazzar,
-          langs: ["TSX", "NEXT JS", "CSS", "TypeScript"],
+          langs: ["TSX", "NEXT.jS", "CSS", "TypeScript"],
           title: "Use Bazzar",
           disc: "A company landing page buying of food stuffs",
           link: "https://usebazaar.africa/"
         },
 
         {
-          img: creator,
-          langs: ["jsx", "css", "javascript", "react", "tailwind css", "node js"],
+          img: rumohq,
+          langs: ["CSS", "Javascript", "react", "Tailwind css", "Node.js"],
           title: "Withaudacious",
           disc: "A website for content creators community",
-          link: "https://withaudacious.vercel.app/"
+          link: "https://rumorhq-delta.vercel.app/"
         },
 
         {
           img: aq,
-          langs: ["HTML", "CSS", "Javascript", "Next js", "tailwind css"],
+          langs: ["HTML", "CSS", "Javascript", "Next js", "Tailwind css"],
           title: "Aquavital Relief ",
           disc: "Designed and developed a clean, modern landing page for healthcare.",
           link: "https://aquavital-relief.vercel.app/"
@@ -42,7 +42,7 @@ const Complete_apps = () => {
 
         {
           img: idea,
-          langs: ["HTML", "CSS", "Javascript", "React", "tailwind css"],
+          langs: ["HTML", "CSS", "Javascript", "React", "Tailwind css"],
           title: "Idea Nexus",
           disc: "Website to pitch an agricultural innovation project.",
           link: "https://idea-nexus-nine.vercel.app/"
