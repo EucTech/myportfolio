@@ -1,10 +1,9 @@
 import Project_card from "../project_card/Project_card";
 
-import shan from "../projects_section/imgs/shan.png";
 import bazzar from "../projects_section/imgs/bazzar.png";
-import creator from "../projects_section/imgs/creator.png";
-import aq from "../projects_section/imgs/aq.png";
+import quickrent from "../projects_section/imgs/quickrent.png";
 import idea from "../projects_section/imgs/idea.png";
+import rumohq from "../projects_section/imgs/rumohq.png";
 
 import {useNavigate} from 'react-router-dom'
 
@@ -20,11 +19,18 @@ const Projects = () => {
     },
 
     {
-      img: aq,
-      langs: ["HTML", "CSS", "Javascript", "Next js", "tailwind css"],
-      title: "Aquavital Relief ",
-      disc: "Designed and developed a clean, modern landing page for healthcare.",
-      link: "https://aquavital-relief.vercel.app/"
+      img: quickrent,
+      langs: ["Next js", "Tailwind css", "Node js", "Express js"],
+      title: "Quick Rent",
+      disc: "Designed and developed a web application for rentinf and selling of properties.",
+      link: "https://quickrent-rho.vercel.app/"
+    },
+    {
+      img: rumohq,
+      langs: ["CSS", "Javascript", "react", "Tailwind css", "Node.js"],
+      title: "Withaudacious",
+      disc: "A website for content creators community",
+      link: "https://rumorhq-delta.vercel.app/"
     },
 
     {

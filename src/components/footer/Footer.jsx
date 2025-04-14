@@ -23,7 +23,7 @@ const Footer = () => {
             </div>
             {/* disc */}
             <div className="text-[#ffffff]">
-              <p>Web Developer based in Rwanda</p>
+              <p>Web Developer @Global</p>
             </div>
           </div>
           {/* right */}
