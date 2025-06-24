@@ -4,6 +4,7 @@ import bazzar from "../projects_section/imgs/bazzar.png";
 import quickrent from "../projects_section/imgs/quickrent.png";
 import idea from "../projects_section/imgs/idea.png";
 import rumohq from "../projects_section/imgs/rumohq.png";
+import zentry from "../projects_section/imgs/zentry.png";
 
 import {useNavigate} from 'react-router-dom'
 
@@ -11,13 +12,19 @@ const Projects = () => {
   // date
   const projects = [
     {
+      img: zentry,
+      langs: ["TSX", "NEXT JS", "TAILWIND CSS", "TypeScript"],
+      title: "Zentry",
+      disc: "A ticket reselling platform for events.",
+      link: "https://zentry-web-henna.vercel.app/events"
+    },
+    {
       img: bazzar,
-      langs: ["TSX", "NEXT JS", "CSS", "TypeScript"],
+      langs: ["TSX", "NEXT JS", "TAILWIND CSS", "TypeScript"],
       title: "Use Bazzar",
       disc: "A company landing page buying of food stuffs",
       link: "https://bazaar-red.vercel.app/"
     },
-
     {
       img: quickrent,
       langs: ["Next js", "Tailwind css", "Node js", "Express js"],
