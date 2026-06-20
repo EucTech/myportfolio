@@ -11,6 +11,10 @@
 # production
 /build
 
+/.claude
+
+/.next
+
 # misc
 .DS_Store
 .env.local
