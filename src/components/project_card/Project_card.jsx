@@ -1,31 +1,34 @@
 const Project_card = ({ img, langs, title, disc, link }) => {
   return (
-    <>
-      <div  data-aos="fade-up" data-aos-delay="300" className="border mx-auto w-[90%] md:w-[48%] lg:w-[30%] border-[#ABB2BF] p-0">
-        {/* img */}
-        <div className="">
-          <img className=" w-full" src={img} alt="" />
-        </div>
-        {/* skills */}
-        <div className="flex gap-2 flex-wrap p-2 border-y border-[#ABB2BF]">
-          {langs.map((e) => {
-            return <span className=" text-[#ABB2BF]">{e}</span>;
-          })}
-        </div>
-        {/* disc */}
-        <div className=" p-4">
-          <h2 className="text-[#FFFFFF] text-2xl font-medium">{title}</h2>
-          <p className=" py-4 text-[#ABB2BF]">{disc}</p>
-          {/* btns */}
-          <div className="">
-            <a href={link} target="_blank" rel="noreferrer" className=" py-2 px-4 text-white border border-[#C778DD] hover:bg-[#C778DD33] duration-150 cursor-pointer">
-              Live {"<"}~{">"}
-            </a>
-          </div>
+    <div data-aos="fade-up" className="border border-[#ABB2BF22] bg-[#ffffff04] overflow-hidden group flex flex-col w-full md:w-[48%] lg:w-[31%]">
+      <div className="overflow-hidden h-52">
+        <img
+          src={img}
+          alt={title}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+      </div>
+      <div className="flex gap-2 flex-wrap px-4 py-3 border-t border-b border-[#ABB2BF22]">
+        {langs.map((e) => (
+          <span key={e} className="text-[#ABB2BF] text-xs">{e}</span>
+        ))}
+      </div>
+      <div className="p-5 flex flex-col flex-1">
+        <h2 className="text-white text-xl font-semibold mb-2">{title}</h2>
+        {disc && <p className="text-[#ABB2BF] text-sm leading-relaxed mb-5 flex-1">{disc}</p>}
+        <div className="mt-auto">
+          <a
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block py-2 px-5 text-sm text-white border border-[#C778DD] hover:bg-[#C778DD33] duration-150"
+          >
+            Live &lt;~&gt;
+          </a>
         </div>
       </div>
-    </>
-  );
-};
+    </div>
+  )
+}
 
-export default Project_card;
+export default Project_card
