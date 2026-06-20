@@ -1,42 +1,69 @@
-import { useNavigate } from "react-router";
-import "./about.css";
+'use client'
+import { useRouter } from 'next/navigation'
 
 const About = () => {
+  const router = useRouter()
 
-  const navigate = useNavigate()
-   
   return (
     <>
-      <div className="px-5 max-w-[1560px] mx-auto min-h-screen pt-20 flex flex-col items-center justify-between flex-wrap">
-        <div data-aos="fade-right" className=" w-10/12 sm:w-8/12 mx-auto">
-          <h1 className="font-semibold text-[32px] text-white mb-3">
-            Uchechukwu is a <span className="text-[#C778DD]">web developer</span> with expertise in
-            <span className="text-[#C778DD]"> front-end development.</span>
-          </h1>
-          <p className="text-[#ABB2BF] my-6">
-          He creates responsive websites that blend technology with creativity.
+      <div className="px-10 md:px-16 max-w-[1560px] mx-auto pt-24 pb-10 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16 md:min-h-screen">
+        {/* Left */}
+        <div data-aos="fade-right" className="flex-1 max-w-xl">
+          <p className="text-[#C778DD] font-medium text-sm mb-3 tracking-widest uppercase">
+            Hi, I'm
           </p>
-          <button onClick={() => navigate("/contact")} className="text-white font-medium py-2 px-4 border duration-200 border-[#C778DD] hover:bg-[#C778DD33]">
-            Contact me!!
-          </button>
-        </div>
-        <div  data-aos="fade-left" data-aos-delay="400" className="mx-auto">
-          <div className="">
-            <img src={require("./imgs/uche.jpg")} alt="" className="w-[400px] rounded-lg" />
+          <h1 className="font-bold text-5xl sm:text-6xl text-white mb-4 leading-tight">
+            Uchechukwu
+          </h1>
+          <h2 className="text-2xl sm:text-3xl font-medium mb-6">
+            <span className="text-[#C778DD]">Software</span>
+            <span className="text-[#ABB2BF]"> Engineer</span>
+          </h2>
+          <p className="text-[#ABB2BF] text-base leading-relaxed mb-10 max-w-md">
+            I build fast, scalable web and mobile applications — turning ideas
+            into clean, production-ready products that users love.
+          </p>
+          <div className="flex gap-4 flex-wrap">
+            <button
+              onClick={() => router.push('/contact')}
+              className="text-white font-medium py-3 px-8 border-2 duration-200 border-[#C778DD] hover:bg-[#C778DD33]"
+            >
+              Contact me
+            </button>
+            <button
+              onClick={() => router.push('/projects')}
+              className="text-[#ABB2BF] font-medium py-3 px-8 border-2 duration-200 border-[#ABB2BF33] hover:border-[#C778DD] hover:text-white"
+            >
+              View Work
+            </button>
           </div>
-          <div className="border flex items-center gap-2 border-[#ABB2BF] p-2 text-[#ABB2BF]">
-            <div className="w-4 h-4 bg-[#C778DD]"></div>
-            <div className="">
-              Currently working on <span className="text-white">Self Development</span>
-            </div>
+        </div>
+
+        {/* Right */}
+        <div data-aos="fade-left" data-aos-delay="300" className="flex-shrink-0">
+          <div className="relative">
+            <div className="absolute inset-0 rounded-full bg-[#C778DD] blur-2xl opacity-20 scale-110"></div>
+            <img
+              src="/uche-dp2.png"
+              alt="Uchechukwu"
+              className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-[#C778DD]"
+            />
           </div>
         </div>
       </div>
-      <div data-aos="fade-up" className=" px-5 py-10">
-        <img className="mx-auto" src={require("./imgs/quote.png")} alt="" />
+
+      {/* Quote */}
+      <div data-aos="fade-up" className="px-10 md:px-16 py-16 max-w-[1560px] mx-auto">
+        <div className="border border-[#ABB2BF22] bg-[#ffffff04] px-8 py-8 relative max-w-3xl mx-auto">
+          <span className="absolute -top-5 left-6 text-6xl text-[#C778DD] leading-none font-serif">"</span>
+          <p className="text-[#ABB2BF] text-lg leading-relaxed italic">
+            Talk is cheap. Show me the code.
+          </p>
+          <p className="text-[#C778DD] font-medium mt-4 text-right">— Linus Torvalds</p>
+        </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default About;
+export default About
