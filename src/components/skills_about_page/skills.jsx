@@ -1,67 +1,37 @@
-import React from 'react'
+const skills = [
+  { title: 'Languages', items: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'Python', 'PHP'] },
+  { title: 'Frameworks', items: ['React', 'React Native', 'Next.js', 'Express.js', 'Node.js', 'Tailwind', 'Bootstrap'] },
+  { title: 'Databases', items: ['MongoDB', 'MySQL'] },
+  { title: 'Tools', items: ['VSCode', 'Git', 'GitHub', 'Postman', 'Vercel'] },
+  { title: 'Other', items: ['Redux', 'Redux Toolkit', 'Mongoose', 'REST APIs'] },
+]
 
 const Skills = () => {
-    const skills = [
-        {
-          title: "Languages",
-          languages: ["HTML", "CSS", "JavaScript", "Python",],
-        },
-        { title: "Databases", languages: ["My-SQL", "Mongo Db"] },
-        {
-          title: "Tools",
-          languages: [
-            "VSCode",
-            "Postman",
-            "Git",
-            "GitHub",
-            "Font Awesome",
-          ],
-        },
-        {
-          title: "Other",
-          languages: ["REDUX", "REDUX-TOOL-KIT", "Mongoose",],
-        },
-        {
-          title: "Frameworks",
-          languages: [
-            "React",
-            "Bootstrap",
-            "Tailwind",
-            "Express js",
-            "Next js",
-            "Node js",
-          ],
-        },
-      ];
-    return (
-        <div className="px-5 max-w-[1560px] mx-auto pt-20 py-10">
-            {/* title */}
-            <div className=" mb-12 text-[32px] font-medium text-white">
-                <span className='text-[#C778DD]'>#</span>
-                skills
+  return (
+    <section className="px-10 md:px-16 max-w-[1560px] mx-auto py-16">
+      <div className="flex items-center gap-4 mb-10">
+        <h2 className="text-white font-medium text-[32px]">
+          <span className="text-[#C778DD]">#</span>skills
+        </h2>
+        <div className="h-px bg-[#C778DD] w-20"></div>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+        {skills.map(({ title, items }) => (
+          <div key={title} className="border border-[#ABB2BF22] bg-[#ffffff04]">
+            <div className="px-4 py-3 border-b border-[#ABB2BF22]">
+              <h3 className="text-white font-semibold">{title}</h3>
             </div>
-            {/* cards */}
-            <div className=" flex justify-around gap-4 flex-wrap">
-                {/* card */}
-                {skills.map(({ title, languages }) => {
-                    return (
-                        <>
-                            <div className="w-[90%] sm:w-[45%] md:w-[24%] lg:w-[18%] border border-[#ABB2BF]">
-                                <div className=" text-white p-2">
-                                    <h2 className=" font-semibold">{title}</h2>
-                                </div>
-                                <div className=" flex gap-2 border-t border-[#ABB2BF] flex-wrap p-2 text-[#ABB2BF]">
-                                    {languages.map((e) => {
-                                        return <span>{e}</span>;
-                                    })}
-                                </div>
-                            </div>
-                        </>
-                    );
-                })}
+            <div className="px-4 py-3 flex flex-wrap gap-2">
+              {items.map((item) => (
+                <span key={item} className="text-[#ABB2BF] text-sm">{item}</span>
+              ))}
             </div>
-        </div>
-    )
+          </div>
+        ))}
+      </div>
+    </section>
+  )
 }
 
 export default Skills
