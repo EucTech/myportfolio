@@ -1,102 +1,93 @@
-import React from "react";
-// imgs
-import Project_card from "../project_card/Project_card";
-import quickrent from "../projects_section/imgs/quickrent.png";
-import bazzar from "../projects_section/imgs/bazzar.png";
-import rumohq from "../projects_section/imgs/rumohq.png";
-import aq from "../projects_section/imgs/aq.png";
-import idea from "../projects_section/imgs/idea.png";
-import zentry from "../projects_section/imgs/zentry.png";
+import quickrent from '../projects_section/imgs/quickrent.png'
+import langcub from '../projects_section/imgs/langcub.png'
+import valcertra from '../projects_section/imgs/valcertra.png'
+import zentry from '../projects_section/imgs/zentry.png'
+
+const projects = [
+  {
+    img: zentry.src,
+    langs: ['Next JS', 'TypeScript', 'Tailwind CSS'],
+    title: 'Zentry',
+    disc: 'A ticket reselling platform for events.',
+    link: 'https://www.zentry.com.ng/',
+  },
+  {
+    img: langcub.src,
+    langs: ['Next JS', 'TypeScript', 'Tailwind CSS'],
+    title: 'Langcub',
+    disc: 'A language learning platform.',
+    link: 'https://langcub.com',
+  },
+  {
+    img: valcertra.src,
+    langs: ['Next JS', 'TypeScript', 'Tailwind CSS'],
+    title: 'Valcertra',
+    disc: 'A modern business landing page.',
+    link: 'https://valcertra.com',
+  },
+  {
+    img: quickrent.src,
+    langs: ['Next JS', 'Node.js', 'Tailwind CSS', 'Express'],
+    title: 'Quick Rent',
+    disc: 'A web application for renting and selling properties.',
+    link: 'https://quickrent-rho.vercel.app/',
+  },
+]
 
 const Complete_apps = () => {
-  const projects = [
-    {
-      img: zentry,
-      langs: ["TSX", "NEXT JS", "TAILWIND CSS", "TypeScript"],
-      title: "Zentry",
-      disc: "A ticket reselling platform for events.",
-      link: "https://zentry-web-henna.vercel.app/events",
-    },
-    {
-      img: quickrent,
-      langs: ["Next.js", "Tailwind css", "Node.js", "Express"],
-      title: "Quick Rent",
-      disc: "Designed and developed a web application for rentinf and selling of properties.",
-      link: "https://quickrent-rho.vercel.app/",
-    },
-    {
-      img: bazzar,
-      langs: ["TSX", "NEXT.jS", "CSS", "TypeScript"],
-      title: "Use Bazzar",
-      disc: "A company landing page buying of food stuffs",
-      link: "https://usebazaar.africa/",
-    },
-
-    {
-      img: rumohq,
-      langs: ["CSS", "Javascript", "react", "Tailwind css", "Node.js"],
-      title: "Withaudacious",
-      disc: "A website for content creators community",
-      link: "https://rumorhq-delta.vercel.app/",
-    },
-
-    {
-      img: aq,
-      langs: ["HTML", "CSS", "Javascript", "Next js", "Tailwind css"],
-      title: "Aquavital Relief ",
-      disc: "Designed and developed a clean, modern landing page for healthcare.",
-      link: "https://aquavital-relief.vercel.app/",
-    },
-
-    {
-      img: idea,
-      langs: ["HTML", "CSS", "Javascript", "React", "Tailwind css"],
-      title: "Idea Nexus",
-      disc: "Website to pitch an agricultural innovation project.",
-      link: "https://idea-nexus-nine.vercel.app/",
-    },
-  ];
   return (
-    <div>
-      <div className=" pt-[114px] px-5 max-w-[1560px] mx-auto">
-        {/* top / title */}
-        <div className="">
-          {/* projects */}
-          <div className=" text-white font-bold text-[32px]">
-            <span className=" text-[#C778DD]">/</span>
-            <span>projects</span>
+    <div className="px-10 md:px-16 max-w-[1560px] mx-auto pt-32 pb-20">
+      {/* Page header */}
+      <div className="mb-16">
+        <h1 className="text-white font-bold text-4xl mb-2">
+          <span className="text-[#C778DD]">/</span>projects
+        </h1>
+        <p className="text-[#ABB2BF]">Things I've built</p>
+      </div>
+
+      {/* Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+        {projects.map(({ img, langs, title, disc, link }) => (
+          <div
+            key={title}
+            className="border border-[#ABB2BF22] bg-[#ffffff04] overflow-hidden group flex flex-col"
+          >
+            {/* Image */}
+            <div className="overflow-hidden h-56">
+              <img
+                src={img}
+                alt={title}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+
+            {/* Tags */}
+            <div className="flex gap-2 flex-wrap px-5 py-3 border-t border-b border-[#ABB2BF22]">
+              {langs.map((tag) => (
+                <span key={tag} className="text-[#ABB2BF] text-xs">{tag}</span>
+              ))}
+            </div>
+
+            {/* Content */}
+            <div className="p-5 flex flex-col flex-1">
+              <h2 className="text-white text-xl font-semibold mb-2">{title}</h2>
+              <p className="text-[#ABB2BF] text-sm leading-relaxed flex-1">{disc}</p>
+              <div className="mt-5">
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-block py-2 px-5 text-sm text-white border border-[#C778DD] hover:bg-[#C778DD33] duration-150"
+                >
+                  Live &lt;~&gt;
+                </a>
+              </div>
+            </div>
           </div>
-          {/* list */}
-          <div className=" text-white mt-[14px]">List of my projects</div>
-        </div>
-        {/* completed tasks */}
-        <div className="">
-          {/* title */}
-          <div className=" text-white font-medium mt-[68px] mb-[48px] text-[32px]">
-            <span className=" text-[#C778DD]">#</span>
-            <span>Projects</span>
-          </div>
-          {/* projects */}
-          <div className="flex flex-wrap justify-start  gap-4 my-12">
-            {/* cards */}
-            {projects.map(({ img, langs, title, disc, link }) => {
-              return (
-                <>
-                  <Project_card
-                    img={img}
-                    langs={langs}
-                    title={title}
-                    disc={disc}
-                    link={link}
-                  />
-                </>
-              );
-            })}
-          </div>
-        </div>
+        ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Complete_apps;
+export default Complete_apps
